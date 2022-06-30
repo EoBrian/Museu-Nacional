@@ -64,32 +64,39 @@ article {
     width: 85%;
     margin: 10px auto;
     display: flex;
+    flex-wrap: wrap;
     align-content: center;
 }
 
 article .conteudo {
     padding: 10px;
     flex-grow: 2;
-    flex-basis: 79%;
-    border: 1px solid;
+    flex-basis: 70%;
 }
 
 article .conteudo .container-conteudo {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     margin-top: 15px;
-    border: 1px solid;
 }
 
 .conteudo .container-conteudo .box {
-   flex-basis: 50%;
+   flex-basis: 49%;
+   margin-bottom: 10px;
    min-width: 300px;
    padding: 10px;
-   border: 1px solid;
 }
 
+.container-conteudo #exposicao{
+    line-height: 1.7em;
+    list-style-type: circle;
+}
+
+#exposicao a{
+    color: #cc795b;
+}
 
 /*---------area lateral------------*/
 article aside {
@@ -99,5 +106,4 @@ article aside {
     flex-direction: column;
     flex-grow: 1;
     flex-basis: 30%;
-    border: 1px solid;
 }

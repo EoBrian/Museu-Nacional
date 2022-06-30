@@ -114,7 +114,7 @@ article .conteudo .container-conteudo {
 /*---------area lateral------------*/
 aside {
     width: 30%;
-    min-width: 300px;
+    min-width: 200px;
     padding: 10px;
     display: flex;
     align-content: center;
@@ -190,6 +190,7 @@ footer nav ul{
     margin: 20px;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 
 footer nav ul a {

@@ -26,58 +26,59 @@
     </nav>
   </header>
 
-  <!---------------- conteudo area----------- -->
-  <article> 
-    <section class="conteudo">
-      <div>
-        <figure>
-          <img width="100%" src="/img/museu.png" alt="">
-        </figure>
-      </div>
-
-      <section class="container-conteudo">
-
-        <div class="box">
-          <h2>VIDEO: CONHEÇA O MUSEU</h2>
-          <div style="margin-top: 10px;">
-            <iframe width="100%" height="200" src="https://www.youtube.com/embed/rx_lWu-dNbk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          </div>
+  <section class="container">
+    <!---------------- conteudo area----------- -->
+    <article> 
+      <section class="conteudo">
+        <div>
+          <figure>
+            <img width="100%" src="/img/museu.png" alt="">
+          </figure>
         </div>
 
-        <div class="box">
-          <h2>MAPA: ENCONTRE O MUSEU</h2>
-          <div style="margin-top: 10px;">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15004.71115947525!2d-43.933496!3d-19.9169114!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc45fcdd8f482f3c5!2sMuseu%20de%20Artes%20e%20Of%C3%ADcios!5e0!3m2!1spt-BR!2sbr!4v1656547386869!5m2!1spt-BR!2sbr" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-          </div>
-        </div>
+        <section class="container-conteudo">
 
-        <div class="box" id="exposicao">
-          <h2>EXPOSIÇÕES</h2>
-          <div>
-            <ul>
-              <li><a href="">Os assustadores insetos</a></li>
-              <li><a href="">O crânio de Luzia, a mulher mais antiga do Brasil</a></li>
-              <li><a href="">Preguiça gigante e tigre dentes-de-sabre</a></li>
-              <li><a href="">Plantas do Brasil Central</a></li>
-              <li><a href="">Teresa Cristina: A imperatriz Arqueóloga</a></li>
-              <li><a href="">Arte com Dinossalros - Paleoarte</a></li>
-            </ul>
-            <li><a href="">Veja todos (65)</a></li>
+          <div class="box">
+            <h2>VIDEO: CONHEÇA O MUSEU</h2>
+            <div style="margin-top: 10px;">
+              <iframe width="100%" height="200" src="https://www.youtube.com/embed/rx_lWu-dNbk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
           </div>
-        </div>
 
-        <div class="box">
-          <h2>200 ANOS DE HISTÓRIA</h2>
-          <div style="padding: 10px; line-height: 1.5em;">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi recusandae animi minus, deserunt optio quaerat tempora labore libero magni alias praesentium! Quam porro inventore deleniti iusto impedit, omnis et voluptate.
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi recusandae animi minus, deserunt optio quaerat tempora labore 
+          <div class="box">
+            <h2>MAPA: ENCONTRE O MUSEU</h2>
+            <div style="margin-top: 10px;">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15004.71115947525!2d-43.933496!3d-19.9169114!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc45fcdd8f482f3c5!2sMuseu%20de%20Artes%20e%20Of%C3%ADcios!5e0!3m2!1spt-BR!2sbr!4v1656547386869!5m2!1spt-BR!2sbr" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
           </div>
-          <a href="">ler mais</a>
-        </div>
 
+          <div class="box" id="exposicao">
+            <h2>EXPOSIÇÕES</h2>
+            <div>
+              <ul>
+                <li><a href="">Os assustadores insetos</a></li>
+                <li><a href="">O crânio de Luzia, a mulher mais antiga do Brasil</a></li>
+                <li><a href="">Preguiça gigante e tigre dentes-de-sabre</a></li>
+                <li><a href="">Plantas do Brasil Central</a></li>
+                <li><a href="">Teresa Cristina: A imperatriz Arqueóloga</a></li>
+                <li><a href="">Arte com Dinossalros - Paleoarte</a></li>
+              </ul>
+              <li><a href="">Veja todos (65)</a></li>
+            </div>
+          </div>
+
+          <div class="box">
+            <h2>200 ANOS DE HISTÓRIA</h2>
+            <div style="padding: 10px; line-height: 1.5em;">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi recusandae animi minus, deserunt optio quaerat tempora labore libero magni alias praesentium! Quam porro inventore deleniti iusto impedit, omnis et voluptate.
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi recusandae animi minus, deserunt optio quaerat tempora labore 
+            </div>
+            <a style="color: #cc795b;" href="">ler mais</a>
+          </div>
+
+        </section>
       </section>
-    </section>
-
+    </article> <!---------------- fim conteudo ----------- -->
     <aside> 
       <div>
         <figure>
@@ -85,12 +86,62 @@
         </figure>
       </div>
 
-      <div>
-        
+      <div class="box-aside" id="form">
+        <h2>FAÇA UMA VISITA</h2>
+        <div class="form">
+          <label for="">data:</label>
+          <input type="date" name="" id="">
+          <label for="">Qtd pessoas:</label>
+          <input type="number" name="" id="">
+        </div>
+        <div>
+          <button>ACESSAR</button>
+        </div>
+      </div>
+
+      <div class="box-aside" style="margin-top: 0;">
+        <div>
+          <h2>GALERIA</h2>
+        </div>
+        <div class="galeria">   
+          <div>
+            <img class="foto" width="90%" src="/img/imagem1.jpg" alt="">
+          </div>
+
+          <div>
+            <img class="foto" width="90%" src="/img/imagem2.jpg" alt="">
+          </div>
+
+          <div>
+            <img class="foto" width="90%" src="/img/imagem3.jpg" alt="">
+          </div>
+
+          <div>
+            <img class="foto" width="90%" src="/img/imagem4.jpg" alt="">
+          </div>
+
+        </div>
       </div>
     </aside>
-  </article> <!---------------- fim conteudo ----------- -->
+  </section>
 
-  <footer></footer>
+  <footer>
+
+    <nav>
+      <ul>
+        <li><a href="">home</a></li>
+        <li><a href="">exposições</a></li>
+        <li><a href="">pesquisa</a></li>
+        <li><a href="">acervo</a></li>
+        <li><a href="">videos</a></li>
+        <li><a href="">fotos</a></li>
+        <li><a href="">contatos</a></li>
+      </ul>
+    </nav>
+
+    <div>
+      <h5>2019 <a href="">Museu Nacional</a> - Todos os direitos reservados</h5>
+    </div>
+  </footer>
 </body>
 </html>

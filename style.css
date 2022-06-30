@@ -4,16 +4,23 @@
     list-style-type: none;
     text-decoration: none;
     box-sizing: border-box;
+    font-weight: 100;
 }
 
 body {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 1em;
+    background-color: rgb(235, 230, 228);
 }
 
-h2 {
-    font-size: 90%;
+article h2 {
+    font-size: 100%;
     color: #638d53;
+}
+
+aside h2 {
+    font-size: 90%;
+    color: #cc795b;
 }
 
 /*------------ menu ------------*/
@@ -46,7 +53,7 @@ header nav ul{
 
 header nav ul a{
     padding: 10px;
-    line-height: 1.8em;
+    line-height: 2em;
     border-radius: 5px;
     color: #cc795b;
     font-size: 90%;
@@ -60,9 +67,16 @@ header nav ul a:hover {
 
 
 /*------------ conteudo ------------*/
-article {
+.container {
     width: 85%;
     margin: 10px auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+article {
+    width: 70%;
     display: flex;
     flex-wrap: wrap;
     align-content: center;
@@ -71,22 +85,21 @@ article {
 article .conteudo {
     padding: 10px;
     flex-grow: 2;
-    flex-basis: 70%;
+    flex-shrink: 1;
 }
 
 article .conteudo .container-conteudo {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-between;
-    margin-top: 15px;
+    justify-content: center;
+    margin-top: 10px;
 }
 
 .conteudo .container-conteudo .box {
-   flex-basis: 49%;
-   margin-bottom: 10px;
-   min-width: 300px;
+   width: 340px;
    padding: 10px;
+   margin-bottom: 10px;
 }
 
 .container-conteudo #exposicao{
@@ -99,11 +112,91 @@ article .conteudo .container-conteudo {
 }
 
 /*---------area lateral------------*/
-article aside {
+aside {
+    width: 30%;
+    min-width: 300px;
     padding: 10px;
     display: flex;
-    flex-wrap: wrap;
+    align-content: center;
     flex-direction: column;
-    flex-grow: 1;
-    flex-basis: 30%;
+}
+
+aside .box-aside{
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #dbcdbac4;
+}
+
+.box-aside .galeria {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+}
+
+.box-aside .galeria div {
+    display: flex;
+    width: 120px;
+    height: 120px;
+    margin: 10px;
+    padding: 5px;
+    align-items: center;
+    align-content: center;
+    background: url(/img/fundo-foto.png) no-repeat center;
+}
+
+.foto {
+    margin: auto;
+}
+
+#form {
+    background: #b3aea0c4;
+    display: flex;
+    flex-direction: column;
+}
+
+#form .form {
+    line-height: 1.7em;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+#form button {
+    width: 100%;
+    margin: auto;
+    padding: 5px;
+    border: none;
+    color: #fff;
+    background-color: #7a6e4d;
+}
+
+
+/*-------------footer area -----------*/
+
+footer {
+    font-size: 100%;
+    height: 100px;
+    display: flex;
+    border-top: 1px solid #cacacac0;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    margin: auto 15%;
+}
+
+footer nav ul{
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+footer nav ul a {
+    color: #cc795b;
+    padding: 10px;
+}
+
+footer div a{
+    color: #cc795b;
 }
